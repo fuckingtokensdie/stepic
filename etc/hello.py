@@ -6,7 +6,7 @@ CONFIG = {
         '--bind=0.0.0.0:8080',
         '--workers=16',
         '--timeout=60',
-        '--log-file /home/box/web/logs/gunicorn.log',
+        '--log-file=/home/box/web/logs/gunicorn.log',
         'hello.wsgi_app',
     )
 }

@@ -1,0 +1,71 @@
+2016-05-20 03:46:57 [259] [INFO] Starting gunicorn 17.5
+2016-05-20 03:46:57 [259] [INFO] Listening at: http://0.0.0.0:8000 (259)
+2016-05-20 03:46:57 [259] [INFO] Using worker: sync
+2016-05-20 03:46:57 [264] [INFO] Booting worker with pid: 264
+2016-05-20 03:46:57 [265] [INFO] Booting worker with pid: 265
+2016-05-20 03:46:57 [266] [INFO] Booting worker with pid: 266
+2016-05-20 03:46:57 [267] [INFO] Booting worker with pid: 267
+2016-05-20 03:46:57 [268] [INFO] Booting worker with pid: 268
+2016-05-20 03:46:57 [269] [INFO] Booting worker with pid: 269
+2016-05-20 03:46:57 [270] [INFO] Booting worker with pid: 270
+2016-05-20 03:46:57 [271] [INFO] Booting worker with pid: 271
+2016-05-20 03:46:57 [272] [INFO] Booting worker with pid: 272
+2016-05-20 03:46:57 [273] [INFO] Booting worker with pid: 273
+2016-05-20 03:46:57 [274] [INFO] Booting worker with pid: 274
+2016-05-20 03:46:57 [275] [INFO] Booting worker with pid: 275
+2016-05-20 03:46:57 [276] [INFO] Booting worker with pid: 276
+2016-05-20 03:46:57 [277] [INFO] Booting worker with pid: 277
+2016-05-20 03:46:57 [278] [INFO] Booting worker with pid: 278
+2016-05-20 03:46:57 [279] [INFO] Booting worker with pid: 279
+2016-05-20 03:48:38 [272] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
+    self.load_middleware()
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 45, in load_middleware
+    mw_class = import_by_path(middleware_path)
+  File "/usr/lib/python2.7/dist-packages/django/utils/module_loading.py", line 26, in import_by_path
+    sys.exc_info()[2])
+  File "/usr/lib/python2.7/dist-packages/django/utils/module_loading.py", line 21, in import_by_path
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/dist-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+ImproperlyConfigured: Error importing module django.middleware.security: "No module named security"
+2016-05-20 03:50:40 [259] [INFO] Handling signal: term
+2016-05-20 03:50:40 [265] [INFO] Worker exiting (pid: 265)
+2016-05-20 03:50:40 [274] [INFO] Worker exiting (pid: 274)
+2016-05-20 03:50:40 [266] [INFO] Worker exiting (pid: 266)
+2016-05-20 03:50:40 [270] [INFO] Worker exiting (pid: 270)
+2016-05-20 03:50:40 [267] [INFO] Worker exiting (pid: 267)
+2016-05-20 03:50:40 [271] [INFO] Worker exiting (pid: 271)
+2016-05-20 03:50:40 [268] [INFO] Worker exiting (pid: 268)
+2016-05-20 03:50:40 [273] [INFO] Worker exiting (pid: 273)
+2016-05-20 03:50:40 [272] [INFO] Worker exiting (pid: 272)
+2016-05-20 03:50:40 [264] [INFO] Worker exiting (pid: 264)
+2016-05-20 03:50:40 [275] [INFO] Worker exiting (pid: 275)
+2016-05-20 03:50:40 [269] [INFO] Worker exiting (pid: 269)
+2016-05-20 03:50:40 [277] [INFO] Worker exiting (pid: 277)
+2016-05-20 03:50:40 [276] [INFO] Worker exiting (pid: 276)
+2016-05-20 03:50:40 [278] [INFO] Worker exiting (pid: 278)
+2016-05-20 03:50:40 [279] [INFO] Worker exiting (pid: 279)
+2016-05-20 03:50:40 [259] [INFO] Shutting down: Master
+2016-05-20 03:50:40 [359] [INFO] Starting gunicorn 17.5
+2016-05-20 03:50:40 [359] [INFO] Listening at: http://0.0.0.0:8000 (359)
+2016-05-20 03:50:40 [359] [INFO] Using worker: sync
+2016-05-20 03:50:40 [364] [INFO] Booting worker with pid: 364
+2016-05-20 03:50:40 [365] [INFO] Booting worker with pid: 365
+2016-05-20 03:50:40 [366] [INFO] Booting worker with pid: 366
+2016-05-20 03:50:40 [367] [INFO] Booting worker with pid: 367
+2016-05-20 03:50:40 [368] [INFO] Booting worker with pid: 368
+2016-05-20 03:50:40 [369] [INFO] Booting worker with pid: 369
+2016-05-20 03:50:40 [370] [INFO] Booting worker with pid: 370
+2016-05-20 03:50:40 [371] [INFO] Booting worker with pid: 371
+2016-05-20 03:50:41 [372] [INFO] Booting worker with pid: 372
+2016-05-20 03:50:41 [373] [INFO] Booting worker with pid: 373
+2016-05-20 03:50:41 [374] [INFO] Booting worker with pid: 374
+2016-05-20 03:50:41 [375] [INFO] Booting worker with pid: 375
+2016-05-20 03:50:41 [376] [INFO] Booting worker with pid: 376
+2016-05-20 03:50:41 [377] [INFO] Booting worker with pid: 377
+2016-05-20 03:50:41 [378] [INFO] Booting worker with pid: 378
+2016-05-20 03:50:41 [379] [INFO] Booting worker with pid: 379

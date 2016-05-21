@@ -4,3 +4,4 @@ sudo ln -sf /home/box/web/etc/hello.py  /etc/gunicorn.d/hello.py
 sudo /etc/init.d/gunicorn restart
 sudo service mysql start
 mysql -uroot -e 'CREATE DATABASE IF NOT EXISTS `ask` CHARACTER SET utf8;'
+alias manage='python ask/manage.py '

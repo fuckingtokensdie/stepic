@@ -1,12 +1,12 @@
 from django.conf.urls import patterns, include, url
-from views import not_found, test
+from views import main, popular, question, test
 
-urlpatterns = patterns('',
-    url(r'^$', test),
+urlpatterns = patterns('qa',
+    url(r'^$', main),
     url(r'^login/', test),
     url(r'^signup/', test),
     url(r'^ask/', test),
-    url(r'^popular/', test),
+    url(r'^popular/', popular),
     url(r'^new/', test),
-    url(r'^question/(.+)/', test),
+    url(r'^question/(?P<question_id>[0-9]+)/', question, name='question'),
 )

@@ -5,7 +5,7 @@ from models import Question, Answer
 
 
 def main(request):
-    all_questions = Question.object.order_by('-added_at')
+    all_questions = Question.objects.order_by('-added_at')
     paginator = Paginator(all_questions, 10)
     page = request.GET.get('page', 1)
     try:
@@ -18,7 +18,7 @@ def main(request):
 
 
 def popular(request):
-    all_questions = Question.object.order_by('-rating')
+    all_questions = Question.objects.order_by('-rating')
     paginator = Paginator(all_questions, 10)
     page = request.GET.get('page', 1)
     try:

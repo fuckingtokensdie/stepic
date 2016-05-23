@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, include, url
 from views import main, popular, question, test
 
-urlpatterns = patterns('qa',
+urlpatterns = patterns('',
     url(r'^$', main),
     url(r'^login/', test),
     url(r'^signup/', test),
